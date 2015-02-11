@@ -10,5 +10,6 @@ func main() {
 }
 
 func handler(responseWriter http.ResponseWriter, req *http.Request) {
+	responseWriter.WriteHeader(200)
 	responseWriter.Write([]byte("test"))
 }
